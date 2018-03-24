@@ -14,7 +14,8 @@ namespace DAL
 
         public void SaveRegistration(RegistrationModel registrationModel)
         {
-
+            _dbContext.Registrations.Add(registrationModel);
+            _dbContext.SaveChanges();
         }
         
     }

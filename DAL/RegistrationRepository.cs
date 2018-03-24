@@ -12,10 +12,22 @@ namespace DAL
             _dbContext = dbContext;
         }
 
-        public void SaveRegistration(RegistrationModel registrationModel)
+        public bool SaveRegistration(RegistrationModel registrationModel)
         {
-            _dbContext.Registrations.Add(registrationModel);
-            _dbContext.SaveChanges();
+            var retVal = true;
+
+            try
+            {
+                _dbContext.Registrations.Add(registrationModel);
+                _dbContext.SaveChanges();
+            }
+            catch
+            {
+                //todo: log exception
+                retVal = false;
+            }
+
+            return retVal;
         }
         
     }

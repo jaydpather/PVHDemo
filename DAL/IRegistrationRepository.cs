@@ -7,6 +7,6 @@ namespace DAL
 {
     public interface IRegistrationRepository
     {
-        void SaveRegistration(RegistrationModel registrationModel);
+        bool SaveRegistration(RegistrationModel registrationModel);
     }
 }

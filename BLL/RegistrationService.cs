@@ -27,7 +27,16 @@ namespace BLL
             var mapper = _autoMapperConfig.CreateMapper();
             var model = mapper.Map<RegistrationModel>(registrationViewModel);
 
-            _registrationRepository.SaveRegistration(model);
+            var success = _registrationRepository.SaveRegistration(model);
+
+            if(success)
+            {
+                registrationViewModel.StatusMessage = "Registration saved successfully.";
+            }
+            else
+            {
+                registrationViewModel.StatusMessage = "Unable to save registration. Please try again later.";
+            }
         }
     }
 }

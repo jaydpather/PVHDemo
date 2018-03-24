@@ -2,12 +2,19 @@
 using ViewModel;
 using Model;
 using DAL;
+using AutoMapper;
 
 namespace BLL
 {
     public class RegistrationService : IRegistrationService
     {
         private IRegistrationRepository _registrationRepository;
+        private static MapperConfiguration _autoMapperConfig;
+
+        public static void InitializeMapper()
+        {
+            _autoMapperConfig = new MapperConfiguration(x => x.CreateMap<RegistrationViewModel, RegistrationModel>());
+        }
 
         public RegistrationService(IRegistrationRepository registrationRepository)
         {
@@ -16,20 +23,10 @@ namespace BLL
 
         public void SaveRegistration(RegistrationViewModel registrationViewModel)
         {
-            var model = MapRegistration(registrationViewModel);
+            var mapper = _autoMapperConfig.CreateMapper();
+            var model = mapper.Map<RegistrationModel>(registrationViewModel);
+
             _registrationRepository.SaveRegistration(model);
-        }
-
-        private RegistrationModel MapRegistration(RegistrationViewModel viewModel)
-        {
-            RegistrationModel retVal = new RegistrationModel
-            {
-                FirstName = viewModel.FirstName,
-                LastName = viewModel.LastName,
-                AddressLine1 = viewModel.AddressLine1
-            };
-
-            return retVal;
         }
     }
 }

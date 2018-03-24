@@ -16,6 +16,7 @@ namespace PVHDemo
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            RegistrationService.InitializeMapper();
         }
 
         public IConfiguration Configuration { get; }

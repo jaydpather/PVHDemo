@@ -30,10 +30,7 @@ namespace PVHDemo
             services.AddSingleton<IRegistrationService, RegistrationService>();
             services.AddSingleton<IRegistrationRepository, RegistrationRepository>();
 
-            //todo: add web.config settingfor connection string
             
-            //var optionsBuilder = new DbContextOptionsBuilder<CodeCampDbContext>();
-            //optionsBuilder.UseSqlServer(connectionString);
             services.AddDbContext<CodeCampDbContext>(ServiceLifetime.Singleton);
         }
 

@@ -23,7 +23,6 @@ namespace BLL
 
         public void SaveRegistration(RegistrationViewModel registrationViewModel)
         {
-            //todo: server side validation (in case user has javascript turned off)
             var mapper = _autoMapperConfig.CreateMapper();
             var model = mapper.Map<RegistrationModel>(registrationViewModel);
 

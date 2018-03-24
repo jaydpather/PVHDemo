@@ -4,7 +4,13 @@
 <h1>Register for a Code Camp</h1>
 <h4>Please enter your info and click Submit.</h4>
 
-<br/>
+<br />
+
+@*todo:
+	make validation messages have red text color
+	add padding so that textbox is not directly against label
+	don't use a table, it looks weird when everything is lined up
+*@
 
 @using (Html.BeginForm("Index", "Home"))
 {
@@ -15,11 +21,6 @@
 				@Html.EditorFor(x => x.FirstName)
 				<br />
 				@Html.ValidationMessageFor(x => x.FirstName)
-				@*
-				todo: red color for validation message
-					this code causes the message to be shown even before clicking Submit:
-					@Html.ValidationMessageFor(x => x.FirstName, "* Required", new { style = "color:red;" })
-				*@
 			</td>
 		</tr>
 		<tr>
@@ -58,7 +59,7 @@
 			<td>@Html.LabelFor(x => x.AddressLine2)</td>
 			<td>
 				@Html.EditorFor(x => x.AddressLine2)
-				<br/>
+				<br />
 				@Html.ValidationMessageFor(x => x.AddressLine2)
 			</td>
 		</tr>
@@ -106,13 +107,13 @@
 			<td>@Html.LabelFor(x => x.Comments)</td>
 			<td>
 				@Html.EditorFor(x => x.Comments)
-				<br/>
+				<br />
 				@Html.ValidationMessageFor(x => x.Comments)
 			</td>
 		</tr>
 	</table>
 
-	<br/>
+	<br />
 
 	<input type="submit" value="Submit" />
 
@@ -120,3 +121,6 @@
 
 	@Html.DisplayFor(x => x.StatusMessage)
 }
+
+
+

@@ -60,6 +60,7 @@ namespace ViewModel
         public string ProgrammingLanguage { get; set; }
 
         [StringLength(250, ErrorMessage = "Must be 250 characters or less")]
+        [DataType(DataType.MultilineText)]
         public string Comments { get; set; }
 
         public string StatusMessage { get; set; }

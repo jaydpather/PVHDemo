@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a96c48ea24ae2cad5f7694836fe2726047366896"
+    "signature": "2e1de3e7eda5c5b6e4675e0c9d29dafd84a3486f"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,8 @@
           "BLL": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
-          "ViewModel": "1.0.0"
+          "ViewModel": "1.0.0",
+          "jQuery": "3.3.1"
         },
         "runtime": {
           "PVHDemo.dll": {}
@@ -56,6 +57,7 @@
           "lib/netstandard1.3/AutoMapper.dll": {}
         }
       },
+      "jQuery/3.3.1": {},
       "Libuv/1.10.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
@@ -4050,6 +4052,13 @@
       "sha512": "sha512-eGKcnJdoF5rYMWPUaSPtlWdvua9xw4hnQN5kM/X4AXLGKghrtPIaMv+RYoA3sj0kyZ3X6wZ1Qj67F+u0pCCPaw==",
       "path": "automapper/6.2.2",
       "hashPath": "automapper.6.2.2.nupkg.sha512"
+    },
+    "jQuery/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tYajvLpBj04iqObTE+KDX172vu9Ifgja17CSezuBAI0nJt5CgsTcQqMX356F8S6z98VZ2k5EAesPNMvwshPhZQ==",
+      "path": "jquery/3.3.1",
+      "hashPath": "jquery.3.3.1.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",

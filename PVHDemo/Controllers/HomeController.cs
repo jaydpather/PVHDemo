@@ -13,9 +13,10 @@ namespace PVHDemo.Controllers
     {
         private IRegistrationService _registrationService;
         
-        public HomeController()
+        public HomeController(IRegistrationService registrationService)
         {
-            _registrationService = new RegistrationService(new DAL.RegistrationRepository()); //todo: replace with dependency injection
+            //_registrationService = new RegistrationService(new DAL.RegistrationRepository()); //todo: replace with dependency injection
+            _registrationService = registrationService;
         }
 
         public IActionResult Index()

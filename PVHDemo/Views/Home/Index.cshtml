@@ -14,104 +14,105 @@
 
 @using (Html.BeginForm("Index", "Home"))
 {
-	<table>
-		<tr>
-			<td>@Html.LabelFor(x => x.FirstName)</td>
-			<td>
-				@Html.EditorFor(x => x.FirstName)
-				<br />
-				@Html.ValidationMessageFor(x => x.FirstName)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.LastName)</td>
-			<td>
-				@Html.EditorFor(x => x.LastName)
-				<br />
-				@Html.ValidationMessageFor(x => x.LastName)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.EmailAddress)</td>
-			<td>
-				@Html.EditorFor(x => x.EmailAddress)
-				<br />
-				@Html.ValidationMessageFor(x => x.EmailAddress)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.PhoneNumber)</td>
-			<td>
-				@Html.EditorFor(x => x.PhoneNumber)
-				<br />
-				@Html.ValidationMessageFor(x => x.PhoneNumber)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.AddressLine1)</td>
-			<td>
-				@Html.EditorFor(x => x.AddressLine1)
-				<br />
-				@Html.ValidationMessageFor(x => x.AddressLine1)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.AddressLine2)</td>
-			<td>
-				@Html.EditorFor(x => x.AddressLine2)
-				<br />
-				@Html.ValidationMessageFor(x => x.AddressLine2)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.City)</td>
-			<td>
-				@Html.EditorFor(x => x.City)
-				<br />
-				@Html.ValidationMessageFor(x => x.City)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.StateProvince)</td>
-			<td>
-				@Html.EditorFor(x => x.StateProvince)
-				<br />
-				@Html.ValidationMessageFor(x => x.StateProvince)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.PostalCode)</td>
-			<td>
-				@Html.EditorFor(x => x.PostalCode)
-				<br />
-				@Html.ValidationMessageFor(x => x.PostalCode)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.Country)</td>
-			<td>
-				@Html.EditorFor(x => x.Country)
-				<br />
-				@Html.ValidationMessageFor(x => x.Country)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.ProgrammingLanguage)</td>
-			<td>
-				@Html.EditorFor(x => x.ProgrammingLanguage)
-				<br />
-				@Html.ValidationMessageFor(x => x.ProgrammingLanguage)
-			</td>
-		</tr>
-		<tr>
-			<td>@Html.LabelFor(x => x.Comments)</td>
-			<td>
-				@Html.EditorFor(x => x.Comments)
-				<br />
-				@Html.ValidationMessageFor(x => x.Comments)
-			</td>
-		</tr>
-	</table>
+<table>
+	<tr>
+		<td>@Html.LabelFor(x => x.FirstName)</td>
+		<td>
+			@Html.EditorFor(x => x.FirstName)
+			<br />
+			@Html.ValidationMessageFor(x => x.FirstName)
+		</td>
+	</tr>
+	
+	<tr>
+		<td>@Html.LabelFor(x => x.LastName)</td>
+		<td>
+			@Html.EditorFor(x => x.LastName)
+			<br />
+			@Html.ValidationMessageFor(x => x.LastName)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.EmailAddress)</td>
+		<td>
+			@Html.EditorFor(x => x.EmailAddress)
+			<br />
+			@Html.ValidationMessageFor(x => x.EmailAddress)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.PhoneNumber)</td>
+		<td>
+			@Html.EditorFor(x => x.PhoneNumber)
+			<br />
+			@Html.ValidationMessageFor(x => x.PhoneNumber)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.AddressLine1)</td>
+		<td>
+			@Html.EditorFor(x => x.AddressLine1)
+			<br />
+			@Html.ValidationMessageFor(x => x.AddressLine1)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.AddressLine2)</td>
+		<td>
+			@Html.EditorFor(x => x.AddressLine2)
+			<br />
+			@Html.ValidationMessageFor(x => x.AddressLine2)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.City)</td>
+		<td>
+			@Html.EditorFor(x => x.City)
+			<br />
+			@Html.ValidationMessageFor(x => x.City)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.StateProvince)</td>
+		<td>
+			@Html.EditorFor(x => x.StateProvince)
+			<br />
+			@Html.ValidationMessageFor(x => x.StateProvince)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.PostalCode)</td>
+		<td>
+			@Html.EditorFor(x => x.PostalCode)
+			<br />
+			@Html.ValidationMessageFor(x => x.PostalCode)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.Country)</td>
+		<td>
+			@Html.EditorFor(x => x.Country)
+			<br />
+			@Html.ValidationMessageFor(x => x.Country)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.ProgrammingLanguage)</td>
+		<td>
+			@Html.EditorFor(x => x.ProgrammingLanguage)
+			<br />
+			@Html.ValidationMessageFor(x => x.ProgrammingLanguage)
+		</td>
+	</tr>
+	<tr>
+		<td>@Html.LabelFor(x => x.Comments)</td>
+		<td>
+			@Html.EditorFor(x => x.Comments)
+			<br />
+			@Html.ValidationMessageFor(x => x.Comments)
+		</td>
+	</tr>
+</table>
 
 	<br />
 
@@ -122,5 +123,7 @@
 	@Html.DisplayFor(x => x.StatusMessage)
 }
 
-
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
 

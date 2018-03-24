@@ -20,7 +20,8 @@
 		},
 		// Optionally generate .map file
 		"sourceMap": false
-	},
+	}
+	/*
 	{
 		"outputFileName": "wwwroot/js/jquery.js",
 		"inputFiles": [
@@ -37,4 +38,5 @@
 		// Optionally generate .map file
 		"sourceMap": false
 	}
+	*/
 ]

@@ -6,3 +6,7 @@ C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\Model\obj\Debug\ne
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\Model\obj\Debug\netstandard2.0\Model.dll
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\Model\obj\Debug\netstandard2.0\Model.pdb
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\Model\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\Model\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\Model\obj\Debug\netstandard2.0\Model.csprojResolveAssemblyReference.cache
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\Model\obj\Debug\netstandard2.0\Model.csproj.CopyComplete

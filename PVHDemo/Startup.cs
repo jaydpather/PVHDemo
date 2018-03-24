@@ -6,6 +6,7 @@ using BLL;
 using DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -28,6 +29,12 @@ namespace PVHDemo
 
             services.AddSingleton<IRegistrationService, RegistrationService>();
             services.AddSingleton<IRegistrationRepository, RegistrationRepository>();
+
+            //todo: add web.config settingfor connection string
+            
+            //var optionsBuilder = new DbContextOptionsBuilder<CodeCampDbContext>();
+            //optionsBuilder.UseSqlServer(connectionString);
+            services.AddDbContext<CodeCampDbContext>(ServiceLifetime.Singleton);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

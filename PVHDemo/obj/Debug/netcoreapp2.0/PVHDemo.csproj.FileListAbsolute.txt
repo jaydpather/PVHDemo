@@ -9,3 +9,12 @@ C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\obj\Debug\
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\obj\Debug\netcoreapp2.0\PVHDemo.AssemblyInfo.cs
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\obj\Debug\netcoreapp2.0\PVHDemo.dll
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\obj\Debug\netcoreapp2.0\PVHDemo.pdb
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\bin\Debug\netcoreapp2.0\ViewModel.dll
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\bin\Debug\netcoreapp2.0\ViewModel.pdb
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\obj\Debug\netcoreapp2.0\PVHDemo.csproj.CopyComplete
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\bin\Debug\netcoreapp2.0\BLL.dll
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\bin\Debug\netcoreapp2.0\BLL.pdb
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\bin\Debug\netcoreapp2.0\Model.dll
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\bin\Debug\netcoreapp2.0\Model.pdb
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\bin\Debug\netcoreapp2.0\DAL.dll
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\PVHDemo\bin\Debug\netcoreapp2.0\DAL.pdb

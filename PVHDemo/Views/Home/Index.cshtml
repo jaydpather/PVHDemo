@@ -1,6 +1,65 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using ViewModel;
+@model RegistrationViewModel
+
+<h1>Register for a Code Camp</h1>
+<h4>Please enter your info and click Submit.</h4>
+
+<br/>
+
+@using (Html.BeginForm("Index", "Home"))
+{
+	<table>
+		<tr>
+			<td>@Html.LabelFor(x => x.FirstName)</td>
+			<td>@Html.EditorFor(x => x.FirstName)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.LastName)</td>
+			<td>@Html.EditorFor(x => x.LastName)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.EmailAddress)</td>
+			<td>@Html.EditorFor(x => x.EmailAddress)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.PhoneNumber)</td>
+			<td>@Html.EditorFor(x => x.PhoneNumber)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.AddressLine1)</td>
+			<td>@Html.EditorFor(x => x.AddressLine1)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.AddressLine2)</td>
+			<td>@Html.EditorFor(x => x.AddressLine2)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.City)</td>
+			<td>@Html.EditorFor(x => x.City)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.StateProvince)</td>
+			<td>@Html.EditorFor(x => x.StateProvince)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.PostalCode)</td>
+			<td>@Html.EditorFor(x => x.PostalCode)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.Country)</td>
+			<td>@Html.EditorFor(x => x.Country)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.ProgrammingLanguage)</td>
+			<td>@Html.EditorFor(x => x.ProgrammingLanguage)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.Comments)</td>
+			<td>@Html.EditorFor(x => x.Comments)</td>
+		</tr>
+	</table>
+	
+	<br/>
+
+	<input type="submit" value="Submit" />
 }
-
-
-Index page

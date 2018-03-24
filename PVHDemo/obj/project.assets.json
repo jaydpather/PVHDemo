@@ -4746,6 +4746,54 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Model": "1.0.0",
+          "ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
+      "ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ViewModel.dll": {}
+        }
       }
     }
   },
@@ -12526,12 +12574,34 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "BLL/1.0.0": {
+      "type": "project",
+      "path": "../BLL/BLL.csproj",
+      "msbuildProject": "../BLL/BLL.csproj"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    },
+    "ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../ViewModel/ViewModel.csproj",
+      "msbuildProject": "../ViewModel/ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "BLL >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "ViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12563,7 +12633,14 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jaydp\\Documents\\Github\\job search March 2018\\PVHDemo\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\jaydp\\Documents\\Github\\job search March 2018\\PVHDemo\\BLL\\BLL.csproj"
+            },
+            "C:\\Users\\jaydp\\Documents\\Github\\job search March 2018\\PVHDemo\\ViewModel\\ViewModel.csproj": {
+              "projectPath": "C:\\Users\\jaydp\\Documents\\Github\\job search March 2018\\PVHDemo\\ViewModel\\ViewModel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

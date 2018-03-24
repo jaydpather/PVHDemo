@@ -7,3 +7,6 @@ C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\ViewModel\obj\Debu
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\ViewModel\obj\Debug\netstandard2.0\ViewModel.AssemblyInfo.cs
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\ViewModel\obj\Debug\netstandard2.0\ViewModel.dll
 C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\ViewModel\obj\Debug\netstandard2.0\ViewModel.pdb
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\ViewModel\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\ViewModel\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\Users\jaydp\Documents\Github\job search March 2018\PVHDemo\ViewModel\obj\Debug\netstandard2.0\ViewModel.csproj.CopyComplete

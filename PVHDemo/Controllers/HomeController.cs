@@ -27,7 +27,11 @@ namespace PVHDemo.Controllers
         [HttpPost]
         public IActionResult Index(RegistrationViewModel registrationViewModel)
         {
-            _registrationService.SaveRegistration(registrationViewModel);
+            if(ModelState.IsValid)
+            {
+                _registrationService.SaveRegistration(registrationViewModel);
+            }
+            
             return View(registrationViewModel);
         }
     }

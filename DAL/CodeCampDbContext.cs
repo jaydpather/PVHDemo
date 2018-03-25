@@ -8,6 +8,7 @@ namespace DAL
 {
     public class CodeCampDbContext : DbContext
     {
+        
         public CodeCampDbContext(DbContextOptions<CodeCampDbContext> options)
             :base(options)
         {
@@ -18,7 +19,9 @@ namespace DAL
         {
             modelBuilder.Entity<RegistrationModel>()
                 .HasKey(x => x.Id);
-            //base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ProgrammingLanguageModel>()
+                .HasKey(x => x.Id);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -29,5 +32,6 @@ namespace DAL
         }
 
         public DbSet<RegistrationModel> Registrations { get; set; }
+        public DbSet<ProgrammingLanguageModel> ProgrammingLanguagesMaster { get; set; }
     }
 }

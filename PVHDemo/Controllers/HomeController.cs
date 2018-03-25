@@ -20,17 +20,23 @@ namespace PVHDemo.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var viewModel = new RegistrationViewModel();
+
+            viewModel.ProgrammingLanguages = _registrationService.GetProgrammingLanguages();
+
+            return View(viewModel);
         }
 
         [HttpPost]
         public IActionResult Index(RegistrationViewModel registrationViewModel)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _registrationService.SaveRegistration(registrationViewModel);
             }
-            
+
+            registrationViewModel.ProgrammingLanguages = _registrationService.GetProgrammingLanguages();
+
             return View(registrationViewModel);
         }
     }

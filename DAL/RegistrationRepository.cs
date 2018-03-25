@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Model;
 
 namespace DAL
@@ -10,6 +12,11 @@ namespace DAL
         public RegistrationRepository(CodeCampDbContext dbContext)
         {
             _dbContext = dbContext;
+        }
+
+        public List<ProgrammingLanguageModel> GetProgrammingLanguages()
+        {
+            return _dbContext.ProgrammingLanguagesMaster.ToList();
         }
 
         public bool SaveRegistration(RegistrationModel registrationModel)

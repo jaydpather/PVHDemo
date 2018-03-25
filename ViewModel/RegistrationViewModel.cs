@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ViewModel
@@ -54,10 +55,10 @@ namespace ViewModel
         [StringLength(20, ErrorMessage = "Must be 20 characters or less")]
         public string PostalCode { get; set; }
 
-        [Required]
-        [Display(Name = "Preferred Programming Language")]
-        [StringLength(20, ErrorMessage = "Must be 20 characters or less")]
-        public string ProgrammingLanguage { get; set; }
+        [Display(Name ="Preferred Programming Language")]
+        public int ProgrammingLanguageId { get; set; }
+
+        public List<ProgrammingLanguageViewModel> ProgrammingLanguages { get; set; }
 
         [StringLength(250, ErrorMessage = "Must be 250 characters or less")]
         [DataType(DataType.MultilineText)]

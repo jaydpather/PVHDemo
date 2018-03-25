@@ -97,11 +97,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>@Html.LabelFor(x => x.ProgrammingLanguage)</td>
+			<td>@Html.LabelFor(x=>x.ProgrammingLanguageId)</td>
 			<td>
-				@Html.EditorFor(x => x.ProgrammingLanguage)
-				<br />
-				@Html.ValidationMessageFor(x => x.ProgrammingLanguage)
+				@Html.DropDownListFor(x => x.ProgrammingLanguageId, new SelectList(Model.ProgrammingLanguages, "Id", "Name", new { Model.ProgrammingLanguageId }))
 			</td>
 		</tr>
 		<tr>

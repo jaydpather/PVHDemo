@@ -8,5 +8,6 @@ namespace BLL
     public interface IRegistrationService
     {
         void SaveRegistration(RegistrationViewModel registrationViewModel);
+        List<ProgrammingLanguageViewModel> GetProgrammingLanguages();
     }
 }

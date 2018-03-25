@@ -11,9 +11,10 @@ using System;
 namespace DAL.Migrations
 {
     [DbContext(typeof(CodeCampDbContext))]
-    partial class CodeCampDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180325040554_ProgrammingLanguageDropdown")]
+    partial class ProgrammingLanguageDropdown
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

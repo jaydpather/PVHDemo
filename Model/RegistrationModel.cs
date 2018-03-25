@@ -48,8 +48,9 @@ namespace Model
         public string PostalCode { get; set; }
 
         [Required]
-        [MaxLength(20)]
-        public string ProgrammingLanguage { get; set; }
+        public int ProgrammingLanguageId { get; set; }
+
+        public ProgrammingLanguageModel ProgrammingLanguage { get; set; }
 
         [MaxLength(250)]
         public string Comments { get; set; }

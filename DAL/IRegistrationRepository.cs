@@ -8,5 +8,6 @@ namespace DAL
     public interface IRegistrationRepository
     {
         bool SaveRegistration(RegistrationModel registrationModel);
+        List<ProgrammingLanguageModel> GetProgrammingLanguages();
     }
 }

@@ -9,6 +9,7 @@ namespace DAL
     {
         private CodeCampDbContext _dbContext;
 
+        //we are using dependency injection so that the repository can be unit tested. (repository does not instantiate DB Context)
         public RegistrationRepository(CodeCampDbContext dbContext)
         {
             _dbContext = dbContext;

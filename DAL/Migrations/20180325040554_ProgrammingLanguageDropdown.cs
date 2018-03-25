@@ -46,7 +46,6 @@ namespace DAL.Migrations
                 onDelete: ReferentialAction.Cascade);
 
             //todo: find a way of inserting static data in migration. Couldn't do this with DropDatabaseIfModelChanges (Initializer / seed method).
-            //migrationBuilder.InsertData("ProgrammingLanguageMaster", new string[] { "Name" }, new string[] { "C#", "VB.Net", "Java", "Javascript" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -13,6 +13,7 @@ namespace PVHDemo.Controllers
     {
         private IRegistrationService _registrationService;
         
+        //we are using dependency injection so that the controller can be unit tested. (controller does not instantiate service)
         public HomeController(IRegistrationService registrationService)
         {
             _registrationService = registrationService;

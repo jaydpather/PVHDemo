@@ -12,16 +12,18 @@ namespace BLL
         private IRegistrationRepository _registrationRepository;
         private static MapperConfiguration _autoMapperConfig;
 
+        //needed for auto mapper
         public static void InitializeMapper()
         {
             _autoMapperConfig = new MapperConfiguration(x =>
                 {
-                    x.CreateMap<RegistrationViewModel, RegistrationModel>().ForMember(model => model.ProgrammingLanguage, opt => opt.Ignore());
+                    x.CreateMap<RegistrationViewModel, RegistrationModel>().ForMember(model => model.ProgrammingLanguage, opt => opt.Ignore()); //no need to populate ProgrammingLanguage property on Model when mapping from ViewModel
                     x.CreateMap<ProgrammingLanguageModel, ProgrammingLanguageViewModel>();
                 });
             
         }
 
+        //we are using dependency injection so that the service can be unit tested. (service does not instantiate Registration Repository)
         public RegistrationService(IRegistrationRepository registrationRepository)
         {
             _registrationRepository = registrationRepository;
@@ -45,6 +47,7 @@ namespace BLL
             }
         }
 
+        //used to populate dropdown list:
         public List<ProgrammingLanguageViewModel> GetProgrammingLanguages()
         {
             var models = _registrationRepository.GetProgrammingLanguages();

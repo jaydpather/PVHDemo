@@ -17,7 +17,7 @@ namespace PVHDemo
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            RegistrationService.InitializeMapper();
+            RegistrationService.InitializeMapper(); //auto mapper configuration
         }
 
         public IConfiguration Configuration { get; }
@@ -27,10 +27,12 @@ namespace PVHDemo
         {
             services.AddMvc();
 
+            //these lines tell MVC which services to instantiate for depedency injection
+            //a singleton is a class that can have only 1 instance
             services.AddSingleton<IRegistrationService, RegistrationService>();
             services.AddSingleton<IRegistrationRepository, RegistrationRepository>();
 
-            
+            //setting up dependency injection for DB context:
             services.AddDbContext<CodeCampDbContext>(ServiceLifetime.Singleton);
         }
 
